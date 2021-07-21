@@ -5,8 +5,8 @@
 Network Working Group                                         M. Thomson
 Internet-Draft                                                   Mozilla
 Intended status: Informational                                  T. Pauly
-Expires: 21 January 2022                                           Apple
-                                                            20 July 2021
+Expires: 22 January 2022                                           Apple
+                                                            21 July 2021
 
 
           Long-term Viability of Protocol Extension Mechanisms
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 January 2022.
+   This Internet-Draft will expire on 22 January 2022.
 
 Copyright Notice
 
@@ -690,7 +690,12 @@ Table of Contents
               <https://datatracker.ietf.org/doc/html/rfc6824>.
 
    [MPTCP-HOW-HARD]
-              "*** BROKEN REFERENCE ***".
+              Raiciu, C., Paasch, C., Barre, S., Ford, A., Honda, M.,
+              Duchene, F., Bonaventure, O., and M. Handley, "How Hard
+              Can It Be? Designing and Implementing a Deployable
+              Multipath TCP", April 2012,
+              <https://www.usenix.org/conference/nsdi12/technical-
+              sessions/presentation/raiciu>.
 
    [NEW-PROTOCOLS]
               Barik, R., Welzl, M., Fairhurst, G., Elmokashfi, A.,
