@@ -700,7 +700,12 @@ Table of Contents
               <https://datatracker.ietf.org/doc/html/rfc6824>.
 
    [MPTCP-HOW-HARD]
-              "*** BROKEN REFERENCE ***".
+              Raiciu, C., Paasch, C., Barre, S., Ford, A., Honda, M.,
+              Duchene, F., Bonaventure, O., and M. Handley, "How Hard
+              Can It Be? Designing and Implementing a Deployable
+              Multipath TCP", April 2012,
+              <https://www.usenix.org/conference/nsdi12/technical-
+              sessions/presentation/raiciu>.
 
    [NEW-PROTOCOLS]
               Barik, R., Welzl, M., Fairhurst, G., Elmokashfi, A.,
