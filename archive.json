@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-07-20T00:48:18.144703+00:00",
+  "timestamp": "2021-07-22T00:45:59.081769+00:00",
   "repo": "intarchboard/draft-use-it-or-lose-it",
   "labels": [
     {
@@ -2242,24 +2242,26 @@
       "id": "MDExOlB1bGxSZXF1ZXN0NjkyMTc5NzMx",
       "title": "Move examples to an appendix",
       "url": "https://github.com/intarchboard/draft-use-it-or-lose-it/pull/57",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "martinthomson",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "I've not modified these much, if at all.  I've added paragraph breaks to\r\nsome.\r\n\r\nThe only one that has changes is TCP, where I've expanded a little on\r\nthe discussion of mptcp and tfo, based on my own understanding of the\r\nstatus of each.  I don't have good citations though, so I'd appreciate\r\nhelp.\r\n\r\nFor #53.",
       "createdAt": "2021-07-19T00:48:19Z",
-      "updatedAt": "2021-07-20T00:18:11Z",
+      "updatedAt": "2021-07-22T00:09:49Z",
       "baseRepository": "intarchboard/draft-use-it-or-lose-it",
       "baseRefName": "main",
       "baseRefOid": "a46bf128cdc1298d54c5b4953331533ce2ef1c4c",
       "headRepository": "intarchboard/draft-use-it-or-lose-it",
       "headRefName": "ex-appendix",
-      "headRefOid": "5d3ed949479adb2bdd1f81822bb110414152cfc8",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "e520e81f363638490f799fcc8da11dc12c172804",
+      "closedAt": "2021-07-22T00:09:49Z",
+      "mergedAt": "2021-07-22T00:09:49Z",
+      "mergedBy": "martinthomson",
+      "mergeCommit": {
+        "oid": "db10e2559c1d4e27d7c1e5da97194100c5103c17"
+      },
       "comments": [
         {
           "author": "martinthomson",
@@ -2267,6 +2269,20 @@
           "body": "Thanks Mirja, those are great references.",
           "createdAt": "2021-07-20T00:18:08Z",
           "updatedAt": "2021-07-20T00:18:08Z"
+        },
+        {
+          "author": "martinthomson",
+          "authorAssociation": "COLLABORATOR",
+          "body": "@tfpauly, what do you think?",
+          "createdAt": "2021-07-21T04:33:40Z",
+          "updatedAt": "2021-07-21T04:33:40Z"
+        },
+        {
+          "author": "tfpauly",
+          "authorAssociation": "MEMBER",
+          "body": "@martinthomson looks good to me! I think Section 2.2 now looks a little short in context, but that's probably OK.",
+          "createdAt": "2021-07-21T15:38:08Z",
+          "updatedAt": "2021-07-21T15:38:08Z"
         }
       ],
       "reviews": [
@@ -2327,6 +2343,86 @@
               "body": "Add a pointer to the new appendix...?",
               "createdAt": "2021-07-19T08:03:48Z",
               "updatedAt": "2021-07-19T08:03:48Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzExODU4MDQy",
+          "commit": {
+            "abbreviatedOid": "e520e81"
+          },
+          "author": "tfpauly",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2021-07-21T15:38:15Z",
+          "updatedAt": "2021-07-21T15:38:15Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "id": "MDExOlB1bGxSZXF1ZXN0Njk0MDQ1NDM5",
+      "title": "We're not talking about policy; mostly",
+      "url": "https://github.com/intarchboard/draft-use-it-or-lose-it/pull/58",
+      "state": "OPEN",
+      "author": "martinthomson",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "This is a hard needle to thread because policy controls are sometimes\r\nunwanted or unexpected and that's not strictly positive.  Making a point\r\nabout exposure to unwanted or unexpected policy controls is part of the\r\nmessage, but we also need to allow endpoints to make a deliberate choice\r\nnot to pass something.  I think that I managed that here, the SIP SBC\r\nexample is particularly good for that.\r\n\r\nI'll follow up with some text on IP router alerts.",
+      "createdAt": "2021-07-21T04:49:32Z",
+      "updatedAt": "2021-07-22T00:16:15Z",
+      "baseRepository": "intarchboard/draft-use-it-or-lose-it",
+      "baseRefName": "main",
+      "baseRefOid": "db10e2559c1d4e27d7c1e5da97194100c5103c17",
+      "headRepository": "intarchboard/draft-use-it-or-lose-it",
+      "headRefName": "policy-no",
+      "headRefOid": "82b1b21480f00eaa56862a07627af832702f86da",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [
+        {
+          "author": "martinthomson",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Thanks Tommy, I've tweaked those and rebased the branch.",
+          "createdAt": "2021-07-22T00:16:15Z",
+          "updatedAt": "2021-07-22T00:16:15Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzExODU5MDMw",
+          "commit": {
+            "abbreviatedOid": "2a2e047"
+          },
+          "author": "tfpauly",
+          "authorAssociation": "MEMBER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2021-07-21T15:39:09Z",
+          "updatedAt": "2021-07-21T15:41:43Z",
+          "comments": [
+            {
+              "originalPosition": 4,
+              "body": "This first sentence doesn't seem to parse?",
+              "createdAt": "2021-07-21T15:39:09Z",
+              "updatedAt": "2021-07-21T15:41:43Z"
+            },
+            {
+              "originalPosition": 31,
+              "body": "Cutting this sentence short (\"The degree to which a middlebox participates varies.\") makes it less clear in context. Can we extend it back to what it was?",
+              "createdAt": "2021-07-21T15:41:05Z",
+              "updatedAt": "2021-07-21T15:41:43Z"
+            },
+            {
+              "originalPosition": 31,
+              "body": "```suggestion\r\nmiddlebox participates varies.  Middleboxes can also apply their\r\n```",
+              "createdAt": "2021-07-21T15:41:39Z",
+              "updatedAt": "2021-07-21T15:41:44Z"
             }
           ]
         }
