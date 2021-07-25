@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-07-22T00:45:59.081769+00:00",
+  "timestamp": "2021-07-25T00:46:38.380513+00:00",
   "repo": "intarchboard/draft-use-it-or-lose-it",
   "labels": [
     {
@@ -2366,24 +2366,26 @@
       "id": "MDExOlB1bGxSZXF1ZXN0Njk0MDQ1NDM5",
       "title": "We're not talking about policy; mostly",
       "url": "https://github.com/intarchboard/draft-use-it-or-lose-it/pull/58",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "martinthomson",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "This is a hard needle to thread because policy controls are sometimes\r\nunwanted or unexpected and that's not strictly positive.  Making a point\r\nabout exposure to unwanted or unexpected policy controls is part of the\r\nmessage, but we also need to allow endpoints to make a deliberate choice\r\nnot to pass something.  I think that I managed that here, the SIP SBC\r\nexample is particularly good for that.\r\n\r\nI'll follow up with some text on IP router alerts.",
       "createdAt": "2021-07-21T04:49:32Z",
-      "updatedAt": "2021-07-22T00:16:15Z",
+      "updatedAt": "2021-07-22T04:08:02Z",
       "baseRepository": "intarchboard/draft-use-it-or-lose-it",
       "baseRefName": "main",
       "baseRefOid": "db10e2559c1d4e27d7c1e5da97194100c5103c17",
       "headRepository": "intarchboard/draft-use-it-or-lose-it",
       "headRefName": "policy-no",
       "headRefOid": "82b1b21480f00eaa56862a07627af832702f86da",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2021-07-22T04:08:01Z",
+      "mergedAt": "2021-07-22T04:08:01Z",
+      "mergedBy": "tfpauly",
+      "mergeCommit": {
+        "oid": "4fd31a0fe456245854a9f8a113cda221a675a795"
+      },
       "comments": [
         {
           "author": "martinthomson",
@@ -2425,6 +2427,19 @@
               "updatedAt": "2021-07-21T15:41:44Z"
             }
           ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzEyMzUwNDcx",
+          "commit": {
+            "abbreviatedOid": "82b1b21"
+          },
+          "author": "tfpauly",
+          "authorAssociation": "MEMBER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2021-07-22T04:07:51Z",
+          "updatedAt": "2021-07-22T04:07:51Z",
+          "comments": []
         }
       ]
     }
