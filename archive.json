@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-07-25T00:46:38.380513+00:00",
+  "timestamp": "2021-08-01T00:52:39.249403+00:00",
   "repo": "intarchboard/draft-use-it-or-lose-it",
   "labels": [
     {
@@ -814,6 +814,30 @@
       "updatedAt": "2021-07-19T11:04:01Z",
       "closedAt": "2021-07-19T11:04:01Z",
       "comments": []
+    },
+    {
+      "number": 59,
+      "id": "MDU6SXNzdWU5NTU5Njc0MzE=",
+      "title": "Presence and order matter",
+      "url": "https://github.com/intarchboard/draft-use-it-or-lose-it/issues/59",
+      "state": "OPEN",
+      "author": "chris-wood",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The document talks a lot about how active use of extensions is good practice. Should it also encourage how those used extensions are expressed on the wire? As an example, the order in which TLS extensions appear in a ClientHello are often hard-coded for simplicity. Many implementations simply iterate over the fixed list of extensions, adding them as needed. \r\n\r\nHowever, it's certainly possible for the _order_ to be a point of ossification. (See [this BoringSSL change](https://boringssl-review.googlesource.com/c/boringssl/+/48045), which acknowledges this fact and allows one to permute the order to change how these extensions are ordered on the wire.) Changing the order would hedge against that ossification. Altering the order may have other side effects, such as performance (though nothing specific comes to mind). \r\n\r\nShould the draft touch on this? If so, I can try and send a PR.\r\n\r\n",
+      "createdAt": "2021-07-29T15:36:30Z",
+      "updatedAt": "2021-07-30T00:14:27Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "DavidSchinazi",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I think this is a great idea!",
+          "createdAt": "2021-07-30T00:14:27Z",
+          "updatedAt": "2021-07-30T00:14:27Z"
+        }
+      ]
     }
   ],
   "pulls": [
