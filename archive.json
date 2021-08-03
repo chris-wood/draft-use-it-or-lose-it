@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-08-01T00:52:39.249403+00:00",
+  "timestamp": "2021-08-03T00:50:37.986917+00:00",
   "repo": "intarchboard/draft-use-it-or-lose-it",
   "labels": [
     {
@@ -827,7 +827,7 @@
       "labels": [],
       "body": "The document talks a lot about how active use of extensions is good practice. Should it also encourage how those used extensions are expressed on the wire? As an example, the order in which TLS extensions appear in a ClientHello are often hard-coded for simplicity. Many implementations simply iterate over the fixed list of extensions, adding them as needed. \r\n\r\nHowever, it's certainly possible for the _order_ to be a point of ossification. (See [this BoringSSL change](https://boringssl-review.googlesource.com/c/boringssl/+/48045), which acknowledges this fact and allows one to permute the order to change how these extensions are ordered on the wire.) Changing the order would hedge against that ossification. Altering the order may have other side effects, such as performance (though nothing specific comes to mind). \r\n\r\nShould the draft touch on this? If so, I can try and send a PR.\r\n\r\n",
       "createdAt": "2021-07-29T15:36:30Z",
-      "updatedAt": "2021-07-30T00:14:27Z",
+      "updatedAt": "2021-08-02T04:15:56Z",
       "closedAt": null,
       "comments": [
         {
@@ -836,6 +836,13 @@
           "body": "I think this is a great idea!",
           "createdAt": "2021-07-30T00:14:27Z",
           "updatedAt": "2021-07-30T00:14:27Z"
+        },
+        {
+          "author": "martinthomson",
+          "authorAssociation": "COLLABORATOR",
+          "body": "So I don't want to get TOO far down this rabbit hole, but it might be good to use extension ordering as an illustrative example.  If nothing else, it's worth noting that there are sometimes surprising aspects of a design that can ossify.\r\n\r\nTwo data points here:\r\n\r\nOur QUIC implementation uses the natural iteration order of a Rust HashMap, which ends up producing transport parameters in a different order each time it is invoked.  Rust does this randomization to avoid hash stacking attacks.  This wasn't deliberate on our part, as we don't care about those attacks, but I quite like that aspect of it.\r\n\r\nYes, in TLS, some stacks fixated on SNI being the first extension.  Others exploded if the last extension was empty.  There might be other similar things, but those are the ones I'm aware of.  I see that BoringSSL now greases ahead of the first extension, so maybe the first requirement is long expired.",
+          "createdAt": "2021-08-02T04:15:56Z",
+          "updatedAt": "2021-08-02T04:15:56Z"
         }
       ]
     }
