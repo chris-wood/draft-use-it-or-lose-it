@@ -5,8 +5,8 @@
 Network Working Group                                         M. Thomson
 Internet-Draft                                                   Mozilla
 Intended status: Informational                                  T. Pauly
-Expires: 23 January 2022                                           Apple
-                                                            22 July 2021
+Expires: 5 February 2022                                           Apple
+                                                           4 August 2021
 
 
           Long-term Viability of Protocol Extension Mechanisms
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 23 January 2022.
+   This Internet-Draft will expire on 5 February 2022.
 
 Copyright Notice
 
@@ -674,9 +674,9 @@ Table of Contents
 
    [HTTP]     Fielding, R. T., Nottingham, M., and J. Reschke, "HTTP
               Semantics", Work in Progress, Internet-Draft, draft-ietf-
-              httpbis-semantics-16, 27 May 2021,
+              httpbis-semantics-17, 25 July 2021,
               <https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-
-              semantics-16>.
+              semantics-17>.
 
    [HTTP-HEADERS]
               Nottingham, M. and P-H. Kamp, "Structured Field Values for
@@ -685,9 +685,9 @@ Table of Contents
 
    [HTTP11]   Fielding, R. T., Nottingham, M., and J. Reschke,
               "HTTP/1.1", Work in Progress, Internet-Draft, draft-ietf-
-              httpbis-messaging-16, 27 May 2021,
+              httpbis-messaging-17, 25 July 2021,
               <https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-
-              messaging-16>.
+              messaging-17>.
 
    [INTOLERANCE]
               Kario, H., "Re: [TLS] Thoughts on Version Intolerance", 20
@@ -764,9 +764,9 @@ Table of Contents
               DOI 10.17487/RFC3261, June 2002,
               <https://datatracker.ietf.org/doc/html/rfc3261>.
 
-   [SMTP]     Resnick, P., Ed., "Internet Message Format", RFC 5322,
-              DOI 10.17487/RFC5322, October 2008,
-              <https://datatracker.ietf.org/doc/html/rfc5322>.
+   [SMTP]     Klensin, J., "Simple Mail Transfer Protocol", RFC 5321,
+              DOI 10.17487/RFC5321, October 2008,
+              <https://datatracker.ietf.org/doc/html/rfc5321>.
 
    [SMTP-TLS-Reporting]
               Margolis, D., Brotman, A., Ramakrishnan, B., Jones, J.,
