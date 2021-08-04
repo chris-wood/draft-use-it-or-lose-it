@@ -78,8 +78,8 @@ Table of Contents
    5.  Complementary Techniques
      5.1.  Cryptography
      5.2.  Fewer Extension Points
-       5.2.1.  Invariants
-     5.3.  Effective Feedback
+     5.3.  Invariants
+     5.4.  Effective Feedback
    6.  Security Considerations
    7.  IANA Considerations
    8.  Informative References
@@ -525,7 +525,7 @@ Table of Contents
    points in protocols like HTTP [HTTP] and DIAMETER [DIAMETER]; see
    Section 3.1.
 
-5.2.1.  Invariants
+5.3.  Invariants
 
    Documenting aspects of the protocol that cannot or will not change as
    extensions or new versions are added can be a useful exercise.
@@ -552,7 +552,7 @@ Table of Contents
    such as Appendix A of [QUIC-INVARIANTS], can be used to clarify
    intent.
 
-5.3.  Effective Feedback
+5.4.  Effective Feedback
 
    While not a direct means of protecting extensibility mechanisms,
    feedback systems can be important to discovering problems.
