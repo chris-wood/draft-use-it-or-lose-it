@@ -76,9 +76,10 @@ Table of Contents
      4.1.  Version Negotiation
      4.2.  Falsifying Active Use
    5.  Complementary Techniques
-     5.1.  Fewer Extension Points
-       5.1.1.  Invariants
-     5.2.  Effective Feedback
+     5.1.  Cryptography
+     5.2.  Fewer Extension Points
+       5.2.1.  Invariants
+     5.3.  Effective Feedback
    6.  Security Considerations
    7.  IANA Considerations
    8.  Informative References
@@ -452,7 +453,21 @@ Table of Contents
    techniques.  The techniques listed here might not prevent
    ossification on their own, but can make active use more effective.
 
-5.1.  Fewer Extension Points
+5.1.  Cryptography
+
+   Cryptography can be used to reduce the number of entities that can
+   participate in a protocol or limit the extent of participation.
+   Using TLS or other cryptographic tools can therefore reduce the
+   number of entities that can influence whether new features are
+   usable.
+
+   [PATH-SIGNALS] recommends the use of encryption and integrity
+   protection to limit participation.  For example, encryption is used
+   by the QUIC protocol [QUIC] to limit the information that is
+   available to middleboxes and integrity protection prevents
+   modification.
+
+5.2.  Fewer Extension Points
 
    A successful protocol will include many potential types of extension.
    Designing multiple types of extension mechanism, each suited to a
@@ -469,7 +484,7 @@ Table of Contents
    points in protocols like HTTP [HTTP] and DIAMETER [DIAMETER]; see
    Section 3.1.
 
-5.1.1.  Invariants
+5.2.1.  Invariants
 
    Documenting aspects of the protocol that cannot or will not change as
    extensions or new versions are added can be a useful exercise.
@@ -491,7 +506,7 @@ Table of Contents
    such as Appendix A of [QUIC-INVARIANTS], can be used to clarify
    intent.
 
-5.2.  Effective Feedback
+5.3.  Effective Feedback
 
    While not a direct means of protecting extensibility mechanisms,
    feedback systems can be important to discovering problems.
@@ -532,9 +547,9 @@ Table of Contents
    that other protocol participants will not take deliberate action to
    prevent protocol evolution.
 
-   Cryptography might be used to exclude potential participants (such as
-   [PATH-SIGNALS] suggests), limiting the number of entities that might.
-   However, authorized protocol peers are most often responsible for the
+   The use of cryptographic techniques to exclude potential participants
+   is the only strong measure that the document recommends.  However,
+   authorized protocol peers are most often responsible for the
    identified problems, which can mean that cryptography is insufficient
    to exclude them.
 
